@@ -7,12 +7,13 @@ using namespace std;
 
 void s_calculation(int x, int z)
 {
+    system("chcp 65001 > nul");
     float S;
     if (x >= 5) {
     S = pow(3 * sin(sqrt(12 * x * x/log10(x-3))),2) + 0.5 * z;
     cout << "S: " << setprecision(1) << fixed << S << endl;
     }
     else {
-    cout << "Íåìîæëèâî âèçíà÷èòè, çà âëàñòèâ³ñòþ ëîãàðèôìà x ìàº áóòè á³ëüøå àáî äîð³âíþº 5" << endl;
+    cout << "ÐÐµÐ¼Ð¾Ð¶Ð»Ð¸Ð²Ð¾ Ð²Ð¸Ð·Ð½Ð°Ñ‡Ð¸Ñ‚Ð¸, Ð·Ð° Ð²Ð»Ð°ÑÑ‚Ð¸Ð²Ñ–ÑÑ‚ÑŽ Ð»Ð¾Ð³Ð°Ñ€Ð¸Ñ„Ð¼Ð° x Ð¼Ð°Ñ” Ð±ÑƒÑ‚Ð¸ Ð±Ñ–Ð»ÑŒÑˆÐµ Ð°Ð±Ð¾ Ð´Ð¾Ñ€Ñ–Ð²Ð½ÑŽÑ” 5" << endl;
     }
 }

@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    system("chcp 1251 & cls");
+    system("chcp 65001 & cls");
     cout << "TC_01: ";
     s_calculation(10, 15);
     cout << "TC_02: ";
