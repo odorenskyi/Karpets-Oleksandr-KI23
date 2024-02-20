@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1708460569 source:c:\users\user\karpets-oleksandr-ki23\lab08\prj\karpets_task\main.cpp
+	<iostream>
+	"ModulesKarpets.h"
+
