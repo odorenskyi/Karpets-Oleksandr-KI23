@@ -9,9 +9,9 @@ using namespace std;
 int main()
 {
     int x;
-    int z;
+    signed int z;
     int a;
-    int b;
+    signed int b;
     system("chcp 65001 & cls");
     cout << "Введіть значення x: ";
     cin >> x;
@@ -25,6 +25,10 @@ int main()
     first();
     second(a, b);
     s_calculation(x, z);
+    cout << "x у шістнадцятковій формі: " << hex << x << endl;
+    cout << "z у шістнадцятковій формі: " << hex << z << endl;
+    cout << "x у вісімковій формі: " << oct << x << endl;
+    cout << "z у вісімковій формі: " << oct << z << endl;
     return 0;
 }
 
