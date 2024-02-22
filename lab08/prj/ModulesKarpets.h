@@ -1,6 +1,6 @@
 #ifndef MODULESKARPETS_H_INCLUDED
 #define MODULESKARPETS_H_INCLUDED
 
-void s_calculation(int x, int z);
+void s_calculation(int, int);
 
 #endif // MODULESKARPETS_H_INCLUDED
