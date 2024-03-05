@@ -22,6 +22,7 @@ int main()
         case 'o':
             int score;
             cout << "Введіть бал хвиль за Бофортом:" << endl;
+            cin >> score;
             boff(score);
             break;
         case 'p':
