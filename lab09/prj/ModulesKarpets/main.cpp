@@ -1,4 +1,6 @@
 #include <iostream>
+#include <bits/stdc++.h>
+#include <string>
 #include<iomanip>
 #include <cmath>
 
@@ -80,12 +82,14 @@ int band(int n, int m)
         n = m;
         m = number;
     }
-    cout << "Непарні числа у діапазоні від " << n << " до " << m << ":" << endl;
     if (m - n == 2 || m - n == -2) {
             cout << "Немає непарних чисел у діапазоні" << endl;
             return 0;
     }
-    while (n < m) {
+    else {
+            cout << "Непарні числа у діапазоні від " << n << " до " << m << ":" << endl;
+    }
+    while (n < m-1) {
         n++;
         if (n%2 != 0) {
                 cout << n << endl;
@@ -104,35 +108,29 @@ int bitband(int N)
         cout << "Число вийшло за заданий діапазон (0 - 80000)" << endl;
         return 1;
     }
-    int countONE;
-    int countZERO;
-    int desicion;
-    int index = 0;
-    while (N != 0) {
-        if (index == 2 && N%2 == 1) {
-            desicion = 1;
-        }
-        if (index == 2 && N%2 == 0) {
-            desicion = 0;
-        }
-        if (N%2 == 1) {
-            countONE += 1;
-        }
-        if (N%2 == 0) {
-            countZERO += 1;
-        }
+    int bin = 0, k = 1;
+    while (N)
+    {
+        bin += (N%2) * k;
+        k *= 10;
         N/=2;
-        index += 1;
+
     }
-    if (index < 2) {
+    string str = to_string(bin);
+    int countONE = count(str.begin(), str.end(), '1');
+    int countZERO = count(str.begin(), str.end(), '0');
+    reverse(str.begin(), str.end());
+    if (str.length() < 3) {
         cout << "Недостатньо бітів" << endl;
         return 1;
     }
-    if (desicion == 1) {
-        cout << "Кількість двійкових одиниць: " << countONE << endl;
-    }
-    else {
-        cout << "Кількість двійкових нулів: " << countZERO << endl;
+    switch (str[2]) {
+        case '0':
+            cout << "Кількість двійкових нулів: " << countZERO << endl;
+            break;
+        case '1':
+            cout << "Кількість двійкових одиниць: " << countONE << endl;
+            break;
     }
     return 0;
 }

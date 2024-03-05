@@ -1,30 +1,43 @@
 #include <iostream>
 #include "ModulesKarpets.h"
-
 using namespace std;
 
 int main()
 {
-    system("chcp 65001 & cls");
-    cout << "TC_01: ";
-    s_calculation(10, 15);
-    cout << "TC_02: ";
-    s_calculation(1, 23);
-    cout << "TC_03: ";
-    s_calculation(5, 9);
-    cout << "TC_04: ";
-    s_calculation(0, 3);
-    cout << "TC_05: ";
-    s_calculation(14, 0);
-    cout << "TC_06: ";
-    s_calculation(0, 0);
-    cout << "TC_07: ";
-    s_calculation(-5, -23);
-    cout << "TC_08: ";
-    s_calculation(-5, 87);
-    cout << "TC_09: ";
-    s_calculation(11, -9);
-    cout << "TC_10: ";
-    s_calculation(7, 129);
+    cout << "\n\n9.1\n\n\n\n\n" << endl;
+    boff(10);
+    boff(1);
+    boff(9);
+    boff(3);
+    boff(0);
+    boff(6);
+    boff(-5);
+    boff(100);
+    boff(11);
+    boff(7);
+
+    cout << "\n\n9.2\n\n\n\n\n" << endl;
+    band(10, 2);
+    band(1, 7);
+    band(11, 9);
+    band(23, 45);
+    band(12, 3);
+    band(6, 6);
+    band(-5, -10);
+    band(10, 5.0);
+    band(14, 21);
+    band(7, 9);
+
+    cout << "\n\n9.3\n\n\n\n\n" << endl;
+    bitband(11);
+    bitband(12);
+    bitband(90);
+    bitband(8);
+    bitband(1);
+    bitband(36);
+    bitband(7);
+    bitband(4);
+    bitband(21);
+    bitband(14);
     return 0;
 }
