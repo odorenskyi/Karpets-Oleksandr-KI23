@@ -6,3 +6,11 @@
 	<iomanip>
 	<cmath>
 
+1710445111 source:c:\users\user\karpets-oleksandr-ki23\lab10\prj\moduleskarpets\main.cpp
+	<iostream>
+	<bits/stdc++.h>
+	<string>
+	<iomanip>
+	<cmath>
+	<fstream>
+

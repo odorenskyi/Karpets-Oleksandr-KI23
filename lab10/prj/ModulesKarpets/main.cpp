@@ -3,7 +3,7 @@
 #include <string>
 #include<iomanip>
 #include <cmath>
-
+#include <fstream>
 
 using namespace std;
 
@@ -135,5 +135,18 @@ int bitband(int N)
     return 0;
 }
 
+void authorinfo(char* file_name)
+{
+    ifstream file (file_name);
+
+ if (file.is_open())
+ {
+     cout << "Все ОК! Файл открыт!\n\n" << endl;
+ }
+ else
+    {
+        cout << "Файл не открыт!\n\n" << endl;
+    }
+}
 
 
