@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1709655856 source:c:\users\user\karpets-oleksandr-ki23\lab08\prj\moduleskarpets\main.cpp
+	<iostream>
+	<bits/stdc++.h>
+	<string>
+	<iomanip>
+	<cmath>
+
