@@ -7,16 +7,18 @@
 
 using namespace std;
 
-void s_calculation(int x, int z)
+float s_calculation(int x, int z)
 {
     system("chcp 65001 > nul");
     float S;
     if (x >= 5) {
     S = pow(3 * sin(sqrt(12 * x * x/log10(x-3))),2) + 0.5 * z;
-    cout << "S: " << setprecision(1) << fixed << S << endl;
+    setprecision(1);
+    fixed;
+    return S;
     }
     else {
-    cout << "Неможливо визначити, за властивістю логарифма x має бути більше або дорівнює 5" << endl;
+    return -1;
     }
 }
 
@@ -159,6 +161,30 @@ void numbersinfo(const char* file_name)
     tm *localeTime = localtime(&seconds);
     filewrite << localeTime->tm_hour << ":" << localeTime->tm_min << ":" << localeTime->tm_sec << "  ";
     filewrite << 1900 + localeTime->tm_year;
+}
+
+void str_calculation(int x, int z, int b, const char* file_name)
+{
+    float res_calc = s_calculation(x, z);
+    int bin = 0, k = 1;
+    while (b)
+    {
+        bin += (b%2) * k;
+        k *= 10;
+        b/=2;
+
+    }
+    string b_in_bin = to_string(bin);
+    ofstream filewrite(file_name, ios_base::app);
+    if (res_calc == -1)
+    {
+        filewrite << "\n" << "Неможливо визначити, за властивістю логарифма x має бути більше або дорівнює 5" << "\n";
+    }
+    else
+    {
+        filewrite << "\n" << "S: " << setprecision(1) << fixed << res_calc <<"\n";
+    }
+    filewrite << "В у двійковій: " << b_in_bin <<"\n";
 }
 
 
