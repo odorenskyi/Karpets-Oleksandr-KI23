@@ -161,6 +161,7 @@ void numbersinfo(const char* file_name)
     tm *localeTime = localtime(&seconds);
     filewrite << localeTime->tm_hour << ":" << localeTime->tm_min << ":" << localeTime->tm_sec << "  ";
     filewrite << 1900 + localeTime->tm_year;
+    filewrite.close();
 }
 
 void str_calculation(int x, int z, int b, const char* file_name)
@@ -185,6 +186,7 @@ void str_calculation(int x, int z, int b, const char* file_name)
         filewrite << "\n" << "S: " << setprecision(1) << fixed << res_calc <<"\n";
     }
     filewrite << "В у двійковій: " << b_in_bin <<"\n";
+    filewrite.close();
 }
 
 
