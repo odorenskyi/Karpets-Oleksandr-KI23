@@ -135,18 +135,30 @@ int bitband(int N)
     return 0;
 }
 
-void authorinfo(char* file_name)
+void numbersinfo(const char* file_name)
 {
-    ifstream file (file_name);
-
- if (file.is_open())
- {
-     cout << "Все ОК! Файл открыт!\n\n" << endl;
- }
- else
+    system("chcp 65001 > nul");
+    fstream fileread(file_name);
+    string buffer;
+    int numbers = 0;
+    if (fileread.is_open())
     {
-        cout << "Файл не открыт!\n\n" << endl;
+    getline(fileread,buffer);
     }
+    for (int i = 0; i < buffer.length(); i++)
+    {
+    if (isdigit(buffer[i]))
+        {
+        numbers++;
+        }
+    }
+    fileread.close();
+    ofstream filewrite(file_name, ios_base::app);
+    filewrite << "\n" << "Кількість цифр: " << numbers <<"\n";
+    time_t seconds = time(NULL);
+    tm *localeTime = localtime(&seconds);
+    filewrite << localeTime->tm_hour << ":" << localeTime->tm_min << ":" << localeTime->tm_sec << "  ";
+    filewrite << 1900 + localeTime->tm_year;
 }
 
 

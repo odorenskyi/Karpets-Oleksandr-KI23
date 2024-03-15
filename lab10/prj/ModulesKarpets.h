@@ -3,8 +3,8 @@
 
 void s_calculation(int, int);
 void boff(int);
-void authorinfo(char*);
 int band(int, int);
 int bitband(int);
+void numbersinfo(const char*);
 
 #endif // MODULESKARPETS_H_INCLUDED
