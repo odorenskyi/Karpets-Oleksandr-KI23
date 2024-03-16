@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1710580315 source:c:\users\user\karpets-oleksandr-ki23\lab10\prj\testdriver\main.cpp
+	<iostream>
+	"ModulesKarpets.h"
+	<fstream>
+
