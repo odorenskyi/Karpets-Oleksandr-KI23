@@ -137,6 +137,75 @@ int bitband(int N)
     return 0;
 }
 
+void authorinfo(const char* file_name)
+{
+    char *locale = setlocale(LC_ALL, "Russian");
+
+    ifstream fileread (file_name);
+
+    string buffer;
+    string information = "У вхідному файлі було знайдено такі слова:";
+    string allInfo;
+    int countChar;
+
+    if (fileread.is_open())
+    {
+        while(getline(fileread, buffer)) allInfo += buffer;
+        for(int i = 0; i < countChar; i++)
+        {
+            if(iswdigit(buffer[i]) || !isalpha(buffer[i]))
+                {
+                    buffer[i] = '/';
+                }
+        }
+        countChar = allInfo.length();
+        int countStudent = buffer.find("/студент/");
+        int countModule = buffer.find("/модуль/");
+        int countDev = buffer.find("/програміст/");
+        int countApp = buffer.find("/програма/");
+
+        if (countStudent != -1) information += " студент";
+        if (countModule != -1)
+        {
+            if (information.length() > 43)
+            {
+                information += ",";
+            }
+            information += " модуль";
+        }
+        if (countDev != -1)
+        {
+            if (information.length() > 43)
+            {
+                information += ",";
+            }
+            information += " програміст";
+        }
+        if (countApp != -1)
+        {
+            if (information.length() > 43)
+            {
+                information += ",";
+            }
+            information += " програма";
+        }
+        if (countStudent == -1 && countModule == -1 && countDev == -1 && countApp == -1)
+        {
+            information = "У вхідному файлі не було знайдено слів: програма, модуль, студент, програміст";
+        }
+        information += ".";
+
+        fileread.close();
+
+        ofstream filewrite(file_name);
+
+        filewrite << "Кількість символів у даному тексті: " << countChar << "\n";
+        filewrite << information << "\n";
+        filewrite << "Модуль було розроблено студентом Центральноукраїнського національного технічого університет Карпець Олександром, м. Кропивницький. Україна. 2024 рік.";
+
+    }
+}
+
 void numbersinfo(const char* file_name)
 {
     system("chcp 65001 > nul");
