@@ -27,46 +27,46 @@ void boff(int score)
     system("chcp 65001 > nul");
     switch (score) {
         case 0:
-            cout << "РЁРІРёРґРєС–СЃС‚СЊ РІС–РґСЂСѓ: < 0.3 Рј/СЃ. РҐР°СЂР°РєС‚РµСЂРёСЃС‚РёРєР° РІС–С‚СЂСѓ: РЁС‚РёР»СЊ" << endl;
+            cout << "Швидкість відру: < 0.3 м/с. Характеристика вітру: Штиль" << endl;
             break;
         case 1:
-            cout << "РЁРІРёРґРєС–СЃС‚СЊ РІС–РґСЂСѓ: 0.3 вЂ“ 1.5 Рј/СЃ. РҐР°СЂР°РєС‚РµСЂРёСЃС‚РёРєР° РІС–С‚СЂСѓ: РўРёС…РёР№" << endl;
+            cout << "Швидкість відру: 0.3 – 1.5 м/с. Характеристика вітру: Тихий" << endl;
             break;
         case 2:
-            cout << "РЁРІРёРґРєС–СЃС‚СЊ РІС–РґСЂСѓ: 1.6 вЂ“ 9.4 Рј/СЃ. РҐР°СЂР°РєС‚РµСЂРёСЃС‚РёРєР° РІС–С‚СЂСѓ: Р›РµРіРєРёР№" << endl;
+            cout << "Швидкість відру: 1.6 – 9.4 м/с. Характеристика вітру: Легкий" << endl;
             break;
         case 3:
-            cout << "РЁРІРёРґРєС–СЃС‚СЊ РІС–РґСЂСѓ: 9.4 вЂ“ 5.4 Рј/СЃ. РҐР°СЂР°РєС‚РµСЂРёСЃС‚РёРєР° РІС–С‚СЂСѓ: РЎР»Р°Р±РєРёР№" << endl;
+            cout << "Швидкість відру: 9.4 – 5.4 м/с. Характеристика вітру: Слабкий" << endl;
             break;
         case 4:
-            cout << "РЁРІРёРґРєС–СЃС‚СЊ РІС–РґСЂСѓ: 5.5 вЂ“ 7.9 Рј/СЃ. РҐР°СЂР°РєС‚РµСЂРёСЃС‚РёРєР° РІС–С‚СЂСѓ: РџРѕРјС–СЂРЅРёР№" << endl;
+            cout << "Швидкість відру: 5.5 – 7.9 м/с. Характеристика вітру: Помірний" << endl;
             break;
         case 5:
-            cout << "РЁРІРёРґРєС–СЃС‚СЊ РІС–РґСЂСѓ: 8.0 вЂ“ 10.7 Рј/СЃ. РҐР°СЂР°РєС‚РµСЂРёСЃС‚РёРєР° РІС–С‚СЂСѓ: РЎРІС–Р¶РёР№" << endl;
+            cout << "Швидкість відру: 8.0 – 10.7 м/с. Характеристика вітру: Свіжий" << endl;
             break;
         case 6:
-            cout << "РЁРІРёРґРєС–СЃС‚СЊ РІС–РґСЂСѓ: 10.8 вЂ“ 13.8 Рј/СЃ. РҐР°СЂР°РєС‚РµСЂРёСЃС‚РёРєР° РІС–С‚СЂСѓ: РЎРёР»СЊРЅРёР№" << endl;
+            cout << "Швидкість відру: 10.8 – 13.8 м/с. Характеристика вітру: Сильний" << endl;
             break;
         case 7:
-            cout << "РЁРІРёРґРєС–СЃС‚СЊ РІС–РґСЂСѓ: 13.9 вЂ“ 17.1 Рј/СЃ. РҐР°СЂР°РєС‚РµСЂРёСЃС‚РёРєР° РІС–С‚СЂСѓ: РњС–С†РЅРёР№" << endl;
+            cout << "Швидкість відру: 13.9 – 17.1 м/с. Характеристика вітру: Міцний" << endl;
             break;
         case 8:
-            cout << "РЁРІРёРґРєС–СЃС‚СЊ РІС–РґСЂСѓ: 17.2 вЂ“ 20.7 Рј/СЃ. РҐР°СЂР°РєС‚РµСЂРёСЃС‚РёРєР° РІС–С‚СЂСѓ: Р”СѓР¶Рµ РјС–С†РЅРёР№" << endl;
+            cout << "Швидкість відру: 17.2 – 20.7 м/с. Характеристика вітру: Дуже міцний" << endl;
             break;
         case 9:
-            cout << "РЁРІРёРґРєС–СЃС‚СЊ РІС–РґСЂСѓ: 20.8 - 24.4 Рј/СЃ. РҐР°СЂР°РєС‚РµСЂРёСЃС‚РёРєР° РІС–С‚СЂСѓ: РЁС‚РѕСЂРј" << endl;
+            cout << "Швидкість відру: 20.8 - 24.4 м/с. Характеристика вітру: Шторм" << endl;
             break;
         case 10:
-            cout << "РЁРІРёРґРєС–СЃС‚СЊ РІС–РґСЂСѓ: 24.5 вЂ“ 28.4 Рј/СЃ. РҐР°СЂР°РєС‚РµСЂРёСЃС‚РёРєР° РІС–С‚СЂСѓ: РЎРёР»СЊРЅРёР№ С€С‚РѕСЂРј" << endl;
+            cout << "Швидкість відру: 24.5 – 28.4 м/с. Характеристика вітру: Сильний шторм" << endl;
             break;
         case 11:
-            cout << "РЁРІРёРґРєС–СЃС‚СЊ РІС–РґСЂСѓ: 28.5 вЂ“ 32.6 Рј/СЃ. РҐР°СЂР°РєС‚РµСЂРёСЃС‚РёРєР° РІС–С‚СЂСѓ: РЁРєРІР°Р»СЊРЅРёР№ С€С‚РѕСЂРј" << endl;
+            cout << "Швидкість відру: 28.5 – 32.6 м/с. Характеристика вітру: Шквальний шторм" << endl;
             break;
         case 12:
-            cout << "РЁРІРёРґРєС–СЃС‚СЊ РІС–РґСЂСѓ: >= 32.7 Рј/СЃ. РҐР°СЂР°РєС‚РµСЂРёСЃС‚РёРєР° РІС–С‚СЂСѓ: РЈСЂР°РіР°РЅ(Р‘СѓСЂРµРІС–Р№)" << endl;
+            cout << "Швидкість відру: >= 32.7 м/с. Характеристика вітру: Ураган(Буревій)" << endl;
             break;
         default:
-            cout << "Р”Р°РЅРѕРіРѕ Р±Р°Р»Сѓ СЃРёР»Рё РІС–С‚СЂСѓ Р·Р° С€РєР°Р»РѕСЋ Р‘РѕС„РѕСЂС‚Р° РЅРµ С–СЃРЅСѓС”" << endl;
+            cout << "Даного балу сили вітру за шкалою Бофорта не існує" << endl;
             break;
 	}
 }
@@ -85,11 +85,11 @@ int band(int n, int m)
         m = number;
     }
     if (m - n == 2 || m - n == -2) {
-            cout << "РќРµРјР°С” РЅРµРїР°СЂРЅРёС… С‡РёСЃРµР» Сѓ РґС–Р°РїР°Р·РѕРЅС–" << endl;
+            cout << "Немає непарних чисел у діапазоні" << endl;
             return 0;
     }
     else {
-            cout << "РќРµРїР°СЂРЅС– С‡РёСЃР»Р° Сѓ РґС–Р°РїР°Р·РѕРЅС– РІС–Рґ " << n << " РґРѕ " << m << ":" << endl;
+            cout << "Непарні числа у діапазоні від " << n << " до " << m << ":" << endl;
     }
     while (n < m-1) {
         n++;
@@ -99,7 +99,7 @@ int band(int n, int m)
         }
     }
     catch (int err) {
-    cout << "Р‘СѓР»Рѕ РІРІРµРґРµРЅРѕ РЅРµРєРѕСЂРµРєС‚РЅС– РґР°РЅС–" << endl;
+    cout << "Було введено некоректні дані" << endl;
     }
 }
 
@@ -107,7 +107,7 @@ int bitband(int N)
 {
     system("chcp 65001 > nul");
     if (N < 0 || N > 80000) {
-        cout << "Р§РёСЃР»Рѕ РІРёР№С€Р»Рѕ Р·Р° Р·Р°РґР°РЅРёР№ РґС–Р°РїР°Р·РѕРЅ (0 - 80000)" << endl;
+        cout << "Число вийшло за заданий діапазон (0 - 80000)" << endl;
         return 1;
     }
     int bin = 0, k = 1;
@@ -123,15 +123,15 @@ int bitband(int N)
     int countZERO = count(str.begin(), str.end(), '0');
     reverse(str.begin(), str.end());
     if (str.length() < 3) {
-        cout << "РќРµРґРѕСЃС‚Р°С‚РЅСЊРѕ Р±С–С‚С–РІ" << endl;
+        cout << "Недостатньо бітів" << endl;
         return 1;
     }
     switch (str[2]) {
         case '0':
-            cout << "РљС–Р»СЊРєС–СЃС‚СЊ РґРІС–Р№РєРѕРІРёС… РЅСѓР»С–РІ: " << countZERO << endl;
+            cout << "Кількість двійкових нулів: " << countZERO << endl;
             break;
         case '1':
-            cout << "РљС–Р»СЊРєС–СЃС‚СЊ РґРІС–Р№РєРѕРІРёС… РѕРґРёРЅРёС†СЊ: " << countONE << endl;
+            cout << "Кількість двійкових одиниць: " << countONE << endl;
             break;
     }
     return 0;
@@ -139,39 +139,37 @@ int bitband(int N)
 
 void authorinfo(const char* file_name)
 {
-    char *locale = setlocale(LC_ALL, "Russian");
-
-    ifstream fileread (file_name);
-
+    fstream fileread (file_name);
     string buffer;
-    string information = "РЈ РІС…С–РґРЅРѕРјСѓ С„Р°Р№Р»С– Р±СѓР»Рѕ Р·РЅР°Р№РґРµРЅРѕ С‚Р°РєС– СЃР»РѕРІР°:";
+    string information = "У вхідному файлі було знайдено такі слова:";
     string allInfo;
     int countChar;
-
     if (fileread.is_open())
     {
-        while(getline(fileread, buffer)) allInfo += buffer;
+        while(getline(fileread, buffer))
+        {
+                        allInfo += buffer;
+        }
+        countChar = allInfo.length();
         for(int i = 0; i < countChar; i++)
         {
-            if(iswdigit(buffer[i]) || !isalpha(buffer[i]))
+            if(isascii(buffer[i]))
                 {
                     buffer[i] = '/';
                 }
         }
-        countChar = allInfo.length();
-        int countStudent = buffer.find("/СЃС‚СѓРґРµРЅС‚/");
-        int countModule = buffer.find("/РјРѕРґСѓР»СЊ/");
-        int countDev = buffer.find("/РїСЂРѕРіСЂР°РјС–СЃС‚/");
-        int countApp = buffer.find("/РїСЂРѕРіСЂР°РјР°/");
-
-        if (countStudent != -1) information += " СЃС‚СѓРґРµРЅС‚";
+        int countStudent = buffer.find("/студент/");
+        int countModule = buffer.find("/модуль/");
+        int countDev = buffer.find("/програміст/");
+        int countApp = buffer.find("/програма/");
+        if (countStudent != -1) information += " студент";
         if (countModule != -1)
         {
             if (information.length() > 43)
             {
                 information += ",";
             }
-            information += " РјРѕРґСѓР»СЊ";
+            information += " модуль";
         }
         if (countDev != -1)
         {
@@ -179,7 +177,7 @@ void authorinfo(const char* file_name)
             {
                 information += ",";
             }
-            information += " РїСЂРѕРіСЂР°РјС–СЃС‚";
+            information += " програміст";
         }
         if (countApp != -1)
         {
@@ -187,11 +185,11 @@ void authorinfo(const char* file_name)
             {
                 information += ",";
             }
-            information += " РїСЂРѕРіСЂР°РјР°";
+            information += " програма";
         }
         if (countStudent == -1 && countModule == -1 && countDev == -1 && countApp == -1)
         {
-            information = "РЈ РІС…С–РґРЅРѕРјСѓ С„Р°Р№Р»С– РЅРµ Р±СѓР»Рѕ Р·РЅР°Р№РґРµРЅРѕ СЃР»С–РІ: РїСЂРѕРіСЂР°РјР°, РјРѕРґСѓР»СЊ, СЃС‚СѓРґРµРЅС‚, РїСЂРѕРіСЂР°РјС–СЃС‚";
+            information = "У вхідному файлі не було знайдено слів: програма, модуль, студент, програміст";
         }
         information += ".";
 
@@ -199,16 +197,15 @@ void authorinfo(const char* file_name)
 
         ofstream filewrite(file_name);
 
-        filewrite << "РљС–Р»СЊРєС–СЃС‚СЊ СЃРёРјРІРѕР»С–РІ Сѓ РґР°РЅРѕРјСѓ С‚РµРєСЃС‚С–: " << countChar << "\n";
+        filewrite << "Кількість символів у даному тексті: " << countChar << "\n";
         filewrite << information << "\n";
-        filewrite << "РњРѕРґСѓР»СЊ Р±СѓР»Рѕ СЂРѕР·СЂРѕР±Р»РµРЅРѕ СЃС‚СѓРґРµРЅС‚РѕРј Р¦РµРЅС‚СЂР°Р»СЊРЅРѕСѓРєСЂР°С—РЅСЃСЊРєРѕРіРѕ РЅР°С†С–РѕРЅР°Р»СЊРЅРѕРіРѕ С‚РµС…РЅС–С‡РѕРіРѕ СѓРЅС–РІРµСЂСЃРёС‚РµС‚ РљР°СЂРїРµС†СЊ РћР»РµРєСЃР°РЅРґСЂРѕРј, Рј. РљСЂРѕРїРёРІРЅРёС†СЊРєРёР№. РЈРєСЂР°С—РЅР°. 2024 СЂС–Рє.";
+        filewrite << "Модуль було розроблено студентом Центральноукраїнського національного технічого університет Карпець Олександром, м. Кропивницький. Україна. 2024 рік.";
         filewrite.close();
     }
 }
 
 void numbersinfo(const char* file_name)
 {
-    system("chcp 65001 > nul");
     fstream fileread(file_name);
     string buffer;
     int numbers = 0;
@@ -224,8 +221,8 @@ void numbersinfo(const char* file_name)
         }
     }
     fileread.close();
-    ofstream filewrite(file_name, ios_base::app);
-    filewrite << "\n" << "РљС–Р»СЊРєС–СЃС‚СЊ С†РёС„СЂ: " << numbers <<"\n";
+    fstream filewrite(file_name, ios_base::app);
+    filewrite << "\n" << "Кількість цифр: " << numbers <<"\n";
     time_t seconds = time(NULL);
     tm *localeTime = localtime(&seconds);
     filewrite << localeTime->tm_hour << ":" << localeTime->tm_min << ":" << localeTime->tm_sec << "  ";
@@ -245,16 +242,17 @@ void str_calculation(int x, int z, int b, const char* file_name)
 
     }
     string b_in_bin = to_string(bin);
-    ofstream filewrite(file_name, ios_base::app);
+
+    fstream filewrite(file_name, ios_base::app);
     if (res_calc == -1)
     {
-        filewrite << "\n" << "РќРµРјРѕР¶Р»РёРІРѕ РІРёР·РЅР°С‡РёС‚Рё, Р·Р° РІР»Р°СЃС‚РёРІС–СЃС‚СЋ Р»РѕРіР°СЂРёС„РјР° x РјР°С” Р±СѓС‚Рё Р±С–Р»СЊС€Рµ Р°Р±Рѕ РґРѕСЂС–РІРЅСЋС” 5" << "\n";
+        filewrite << "\n" << "Неможливо визначити, за властивістю логарифма x має бути більше або дорівнює 5" << "\n";
     }
     else
     {
         filewrite << "\n" << "S: " << setprecision(1) << fixed << res_calc <<"\n";
     }
-    filewrite << "Р’ Сѓ РґРІС–Р№РєРѕРІС–Р№: " << b_in_bin <<"\n";
+    filewrite << "В у двійковій: " << b_in_bin <<"\n";
     filewrite.close();
 }
 
