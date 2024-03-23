@@ -73,6 +73,7 @@ int main()
     str_calculation(12, 38, 43, "fiba.txt");
     cout << "END OF TEST 10.3" << endl;
 
+    system("pause");
     return 0;
 }
 
