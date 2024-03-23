@@ -19,9 +19,9 @@ int main()
     test3 << "Ця програма була написана програмістом, але модуль писав студент.";
     test3.close();
     authorinfo("nonefile.txt");
-    ofstream test4 ("information.txt");
-    test4.close();
+
     authorinfo("information.txt");
+
     ofstream test5 ("work.txt");
     test5 << "Зараз загальна кількість вагонів, задіяних у медичній евакуації в Україні, становить 62 одиниці.";
     test5.close();
@@ -45,9 +45,9 @@ int main()
     test9 << "18 березня 2024 р. вийде Embedded App SDK.";
     test9.close();
     numbersinfo("sdk.txt");
-    ofstream test10 ("all.txt");
-    test10.close();
+
     numbersinfo("all.txt");
+
     cout << "END OF TEST 10.2" << endl;
 
 
@@ -67,10 +67,9 @@ int main()
     ofstream test14 ("lambda.txt");
     test14.close();
     str_calculation(11, 78, 0, "lambda.txt");
-    ofstream test15 ("fiba.txt");
-    test15 << "NewGeneration 2024";
-    test15.close();
+
     str_calculation(12, 38, 43, "fiba.txt");
+
     cout << "END OF TEST 10.3" << endl;
 
     system("pause");

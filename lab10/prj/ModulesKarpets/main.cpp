@@ -144,6 +144,14 @@ void authorinfo(const char* file_name)
     string information = "У вхідному файлі було знайдено такі слова:";
     string allInfo;
     int countChar;
+    if(!fileread.is_open())
+    {
+        ofstream file(file_name);
+        file.close();
+        fstream fileread(file_name);
+    }
+
+
     if (fileread.is_open())
     {
         while(getline(fileread, buffer))
