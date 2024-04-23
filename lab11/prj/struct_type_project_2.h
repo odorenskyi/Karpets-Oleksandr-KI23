@@ -1,24 +1,40 @@
 #ifndef STRUCT_TYPE_PROJECT_2_H_INCLUDED
 #define STRUCT_TYPE_PROJECT_2_H_INCLUDED
 
+#include <iostream>
+
+using namespace std;
+
+struct date{
+    short day;
+    short month;
+    short year;
+};
+
 struct Employee {
-    string fillDate;
-    int rollNumber;
+    date creationDate;
+    int regNum;
     int ID;
-    string gender;
-    string typeOfWork;
+    char gender;
+    char typeOfWork;
     string fullName;
-    string dateOfBirthday;
+    date birthday;
     string citizenship;
-    string education;
-    string lastWork;
-    string positionOnLastWork;
-    string workExperience;
-    string placeOfresidence;
-    string passportData;
-    string moreInf;
-    string dateOfDismissal;
-    string reasonForDisissal;
+    enum {basicSecondary, compSecondary, vocational,
+          incompHigher, basicHigher, higher} education[4];
+    string placeOfEducation[4];
+    string lastJobPlace;
+    string lastJob;
+    struct {
+        short days;
+        short months;
+        short years;
+    } workExp;
+    string placeOfLiving;
+    string passportInfo;
+    string additionalInfo;
+    date dateOfDissial;
+    string reasonForDissial;
 };
 
 #endif // STRUCT_TYPE_PROJECT_2_H_INCLUDED
