@@ -18,7 +18,7 @@ void InputGenderOrTypeWork(string title, char &input, char checkMark, char defau
 void InputEducation(Employee &personalcard);
 void InputWorkExp(Employee &personalcard);
 bool YouWorked();
-Employee InputPersonalCard();
+Employee InputAccount();
 void addToDataBase(vector<Employee> &database);
 
 

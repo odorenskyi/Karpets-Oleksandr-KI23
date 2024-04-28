@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1714323381 source:c:\users\user\karpets-oleksandr-ki23\lab11\prj\prj_2_karpets\main.cpp
+	"ModulesChepil.h"
+	"ModulesKarpets.h"
+	"ModulesYarovets.h"
+
