@@ -1,5 +1,3 @@
-#include "Karpets_h.h"
-
 using namespace std;
 
 
