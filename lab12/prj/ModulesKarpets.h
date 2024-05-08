@@ -1,11 +1,16 @@
-#ifndef CLASSLAB12_H_INCLUDED
-#define CLASSLAB12_H_INCLUDED
+#ifndef MODULESKARPETS_H_INCLUDED
+#define MODULESKARPETS_H_INCLUDED
 
 #include <cmath>
 
 class ClassLab12_Karpets {
 
 public:
+    ClassLab12_Karpets(float len) {
+        lengthCube = len;
+        ripeness = 'n';
+    }
+
     void setLen(float len) {
         lengthCube = len;
     }
@@ -18,8 +23,9 @@ public:
         return pow(lengthCube, 3);
     }
 
-    void setRipn(char status) {
-        ripeness = status;
+    void setRipn() {
+        if (ripeness = 'n') ripeness = 'y';
+        else ripeness = 'n';
     }
 
     char getRipn() {
@@ -30,4 +36,4 @@ private:
     char ripeness;
 };
 
-#endif // CLASSLAB12_H_INCLUDED
+#endif // MODULESKARPETS_H_INCLUDED

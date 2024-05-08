@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1715200535 source:c:\users\user\karpets-oleksandr-ki23\lab12\prj\teacher\main.cpp
+	<vector>
+	<iostream>
+	<string>
+	<fstream>
+	<Windows.h>
+	"ModulesKarpets.h"
+
