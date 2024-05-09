@@ -11,6 +11,7 @@ using namespace std;
 
 int main()
 {
+    try {
     string filePath = __FILE__;
     string allPath = filePath;
 
@@ -30,6 +31,7 @@ int main()
     else {
         ifstream file;
         file.open(allPath + testFile);
+        if (!file.is_open()) throw (string)"Файл для тестування не знайдено...";
         string line;
         int testNum = 1;
         while (!file.eof()) {
@@ -53,4 +55,6 @@ int main()
         file.close();
     }
     return 0;
+    }
+    catch(string errorString) { cout << errorString << endl; }
 }
