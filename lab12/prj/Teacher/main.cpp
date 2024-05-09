@@ -11,6 +11,7 @@ using namespace std;
 
 int main()
 {
+    system("chcp 1251 & cls");
     try {
     string filePath = __FILE__;
     string allPath = filePath;
@@ -54,6 +55,8 @@ int main()
         }
         file.close();
     }
+    cout << "Тестування пройшло вдало!" << endl;
+    system("pause");
     return 0;
     }
     catch(string errorString) { cout << errorString << endl; }
