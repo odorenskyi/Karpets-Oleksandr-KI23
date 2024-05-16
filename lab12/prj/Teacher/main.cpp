@@ -4,7 +4,6 @@
 #include <fstream>
 #include <Windows.h>
 
-
 #include "ModulesKarpets.h"
 
 using namespace std;
